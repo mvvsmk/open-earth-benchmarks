@@ -55,7 +55,10 @@ int main(int argc, char **argv) {
   initValue(uout, 0.0, domain_size, domain_height);
   initValue(vout, 0.0, domain_size, domain_height);
 
+  start_instrumentaion
   nh_p_grad(uout, vout, uin, vin, rdx, rdy, gz, pp, pk3, wk1, wk, du, dv, dt);
+  stop_instrumentation
+  print_instruments
 
   // free the storage
   freeStorage(uin);

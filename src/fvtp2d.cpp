@@ -70,7 +70,10 @@ int main(int argc, char **argv) {
   initValue(fy1, -1.0, domain_size, domain_height);
   initValue(fy2, -1.0, domain_size, domain_height);
 
+  start_instrumentaion
   fvtp2d(q_i, q_j, fx1, fx2, fy1, fy2, q, crx, cry, ra_x, ra_y, xfx, yfx, area, fxx, fyy, al, almq, br, b0, smt5);
+  stop_instrumentation
+  print_instruments
 
   // free the storage
   freeStorage(q);

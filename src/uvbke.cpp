@@ -47,7 +47,10 @@ int main(int argc, char **argv) {
   initValue(ub, -1.0, domain_size, domain_height);
   initValue(vb, -1.0, domain_size, domain_height);
 
+  start_instrumentaion
   uvbke(ub, vb, uc, vc, cosa, rsina);
+  stop_instrumentation
+  print_instruments
 
   // free the storage
   freeStorage(uc);

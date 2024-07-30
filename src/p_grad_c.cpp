@@ -53,7 +53,10 @@ int main(int argc, char **argv) {
   initValue(uout, 0.0, domain_size, domain_height);
   initValue(vout, 0.0, domain_size, domain_height);
 
+  start_instrumentaion
   p_grad_c(uout, vout, uin, vin, rdxc, rdyc, delpc, gz, pkc, wk, dt2);
+  stop_instrumentation
+  print_instruments
 
   // free the storage
   freeStorage(uin);

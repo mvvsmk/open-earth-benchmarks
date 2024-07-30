@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <array>
+#include "papi_inst.h"
 
 #define EARTH_RADIUS ((ElementType)6371.229e3) // radius of the earth
 #define EARTH_RADIUS_RECIP ((ElementType)1.0 / EARTH_RADIUS)

@@ -62,7 +62,10 @@ int main(int argc, char **argv) {
   initValue(T_sqr_s, 0.0, domain_size, domain_height);
   initValue(S_sqr_uv, 0.0, domain_size, domain_height);
 
+  start_instrumentaion
   hdiffsmag(uout, vout, uin, vin, mask, crlavo, crlavu, crlato, crlatu, acrlat0, T_sqr_s, S_sqr_uv, eddlat, eddlon, tau_smag, weight_smag);
+  stop_instrumentation
+  print_instruments
 
   // free the storage
   freeStorage(uin);

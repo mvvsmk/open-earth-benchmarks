@@ -34,7 +34,10 @@ int main(int argc, char **argv) {
   initValue(out, 0.0, domain_size, domain_height);
 
   // computing the reference version
+  start_instrumentaion
   laplace(in, out);
+  stop_instrumentation
+  print_instruments
 
   // free the storage
   freeStorage(in);

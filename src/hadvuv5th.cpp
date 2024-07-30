@@ -59,7 +59,10 @@ int main(int argc, char **argv) {
   initValue(uout, 0.0, domain_size, domain_height);
   initValue(vout, 0.0, domain_size, domain_height);
 
+  start_instrumentaion
   hadvuv5th(uout, vout, uin, vin, acrlat0, acrlat1, tgrlatda0, tgrlatda1, uatupos, vatupos, uatvpos, vatvpos, uavg, vavg, ures, vres, eddlat, eddlon);
+  stop_instrumentation
+  print_instruments
 
   // free the storage
   freeStorage(uin);

@@ -44,7 +44,10 @@ int main(int argc, char **argv) {
 
   std::cout << "-> starting verification" << std::endl;
 
+  start_instrumentaion
   hdiffsa(in, mask, out, crlato, crlatu, lap, flx, fly);
+  stop_instrumentation
+  print_instruments
 
   // free the storage
   freeStorage(in);
