@@ -62,7 +62,6 @@ int main(int argc, char **argv) {
   start_instrumentaion
   hadvuv5th(uout, vout, uin, vin, acrlat0, acrlat1, tgrlatda0, tgrlatda1, uatupos, vatupos, uatvpos, vatvpos, uavg, vavg, ures, vres, eddlat, eddlon);
   stop_instrumentation
-  print_instruments
 
   // free the storage
   freeStorage(uin);
@@ -82,5 +81,6 @@ int main(int argc, char **argv) {
   freeStorage(ures);
   freeStorage(vres);
 
+  print_instruments
   return 0;
 }

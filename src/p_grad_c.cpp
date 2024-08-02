@@ -56,7 +56,6 @@ int main(int argc, char **argv) {
   start_instrumentaion
   p_grad_c(uout, vout, uin, vin, rdxc, rdyc, delpc, gz, pkc, wk, dt2);
   stop_instrumentation
-  print_instruments
 
   // free the storage
   freeStorage(uin);
@@ -70,5 +69,6 @@ int main(int argc, char **argv) {
   freeStorage(vout);
   freeStorage(wk);
 
+  print_instruments
   return 0;
 }

@@ -161,10 +161,14 @@ void print_energy_time(){
     time_reading = double(end_time_counter - start_time_counter) / 1.7e+9;
     #ifdef HUMAN_READABLE
     fprintf(stderr,"Measured Energy : %lld \n", energy_reading);
-    fprintf(stderr,"Measured Energy : %lf \n", time_reading);
+    fprintf(stderr,"Measured Time : %lf \n", time_reading);
+    fprintf(stderr,"Start Energy : %lld \n", start_energy_counter);
+    fprintf(stderr,"End Energy : %lld \n", end_energy_counter);
     #endif
     fprintf(stdout,"%lld\n", energy_reading);
     fprintf(stdout,"%lf\n", time_reading);
+    fprintf(stdout,"%lld\n", start_energy_counter);
+    fprintf(stdout,"%lld\n", end_energy_counter);
 }
 
 # undef start_instrumentaion

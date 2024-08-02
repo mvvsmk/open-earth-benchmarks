@@ -65,7 +65,6 @@ int main(int argc, char **argv) {
   start_instrumentaion
   hdiffsmag(uout, vout, uin, vin, mask, crlavo, crlavu, crlato, crlatu, acrlat0, T_sqr_s, S_sqr_uv, eddlat, eddlon, tau_smag, weight_smag);
   stop_instrumentation
-  print_instruments
 
   // free the storage
   freeStorage(uin);
@@ -81,5 +80,6 @@ int main(int argc, char **argv) {
   freeStorage(T_sqr_s);
   freeStorage(S_sqr_uv);
 
+  print_instruments
   return 0;
 }

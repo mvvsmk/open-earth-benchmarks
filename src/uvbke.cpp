@@ -50,7 +50,6 @@ int main(int argc, char **argv) {
   start_instrumentaion
   uvbke(ub, vb, uc, vc, cosa, rsina);
   stop_instrumentation
-  print_instruments
 
   // free the storage
   freeStorage(uc);
@@ -61,5 +60,6 @@ int main(int argc, char **argv) {
   freeStorage(ub);
   freeStorage(vb);
 
+  print_instruments
   return 0;
 }

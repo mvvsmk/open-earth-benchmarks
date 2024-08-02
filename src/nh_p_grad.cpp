@@ -58,7 +58,6 @@ int main(int argc, char **argv) {
   start_instrumentaion
   nh_p_grad(uout, vout, uin, vin, rdx, rdy, gz, pp, pk3, wk1, wk, du, dv, dt);
   stop_instrumentation
-  print_instruments
 
   // free the storage
   freeStorage(uin);
@@ -75,5 +74,6 @@ int main(int argc, char **argv) {
   freeStorage(du);
   freeStorage(dv);
 
+  print_instruments
   return 0;
 }

@@ -37,11 +37,11 @@ int main(int argc, char **argv) {
   start_instrumentaion
   laplace(in, out);
   stop_instrumentation
-  print_instruments
 
   // free the storage
   freeStorage(in);
   freeStorage(out);
 
+  print_instruments
   return 0;
 }

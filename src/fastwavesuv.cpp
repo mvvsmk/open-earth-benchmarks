@@ -63,7 +63,6 @@ int main(int argc, char **argv) {
   start_instrumentaion
   fastwavesuv(uout, vout, uin, vin, utens, vtens, wgtfac, ppuv, hhl, rho, fx, ppgk, ppgc, ppgu, ppgv, edadlat, dt);
   stop_instrumentation
-  print_instruments
 
   // free the storage
   freeStorage(uin);
@@ -82,5 +81,6 @@ int main(int argc, char **argv) {
   freeStorage(ppgu);
   freeStorage(ppgv);
 
+  print_instruments
   return 0;
 }

@@ -47,7 +47,6 @@ int main(int argc, char **argv) {
   start_instrumentaion
   hdiffsa(in, mask, out, crlato, crlatu, lap, flx, fly);
   stop_instrumentation
-  print_instruments
 
   // free the storage
   freeStorage(in);
@@ -59,5 +58,6 @@ int main(int argc, char **argv) {
   freeStorage(flx);
   freeStorage(fly);
 
+  print_instruments
   return 0;
 }
