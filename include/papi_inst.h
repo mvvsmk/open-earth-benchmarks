@@ -126,13 +126,13 @@ long long get_energy() {
 }
 
 void start_energy_time() {
-  start_time_counter = std::chrono::highreshigh_resolution_clock::now();
+  start_time_counter = std::chrono::high_resolution_clock::now();
   start_energy_counter = get_energy();
 }
 
 void end_energy_time() {
   end_energy_counter = get_energy();
-  end_time_counter = std::chrono::highreshigh_resolution_clock::now();
+  end_time_counter = std::chrono::high_resolution_clock::now();
 }
 
 void print_energy_time() {
