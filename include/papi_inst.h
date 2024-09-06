@@ -95,7 +95,6 @@ void print_papi() {
 double time_reading_ns = 0;
 double time_reading = 0;
 long long energy_reading = 0;
-double time_reading_ns;
 std::chrono::time_point<std::chrono::high_resolution_clock> start_time_counter;
 std::chrono::time_point<std::chrono::high_resolution_clock> end_time_counter;
 long long start_energy_counter = 0;
@@ -137,6 +136,7 @@ void end_energy_time() {
 }
 
 void print_energy_time() {
+  std::chrono::duration<double> timing = end_time_counter - start_time_counter;
   energy_reading = end_energy_counter - start_energy_counter;
   time_reading_ns =
       std::chrono::duration_cast<std::chrono::nanoseconds>(timing).count();
